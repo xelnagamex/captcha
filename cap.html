@@ -1,0 +1,7 @@
+<form action="go.php" method="post" enctype="multipart/form-data">
+<img src='captcha.php' id='capcha-image'>
+<br><a href="javascript:void(0);" onclick="document.getElementById('capcha-image').src='captcha.php?rid=' + Math.random();">Refresh</a>
+<br><span>Enter security code here:</span>
+<input type="text" name="code">
+<input type="submit" name="go" value="Submit">
+</form>

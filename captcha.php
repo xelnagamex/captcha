@@ -41,6 +41,7 @@ function img_code($code)
 	$x = rand(0, 35);
 	for($i = 0; $i < strlen($code); $i++) {
 		$x+=rand(12, 18);
+		$color = imagecolorallocate($im, rand(0, 200), 0, rand(0, 200));
 		$letter=substr($code, $i, 1);
 		imagettftext ($im, $font_arr[$n]["size"], rand(2, 4), $x, rand(40, 55), $color, img_dir.$font_arr[$n]["fname"], $letter);
 	}
